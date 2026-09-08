@@ -3,6 +3,7 @@ import { TodoSearch } from './TodoSearch';
 import {TodoList} from './TodoList';
 import logo from './platzi.webp';
 import './App.css';
+import { TodoItem } from './TodoItem';
 
 function App() {
   return (
@@ -20,15 +21,6 @@ function App() {
   );
 }
 
-function TodoItem() {
-  return (
-    <li>
-      <span>V</span>
-      <p>llorar con la llorona </p>
-      <span>X</span>
-    </li>
-    
-  );
-}
+
 
 export default App;
