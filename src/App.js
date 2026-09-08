@@ -25,7 +25,7 @@ function TodoItem() {
     <li>
       <span>V</span>
       <p>llorar con la llorona </p>
-      <h2>Eliminar</h2>
+      <span>X</span>
     </li>
     
   );
