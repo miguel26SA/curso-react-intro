@@ -1,3 +1,24 @@
+body{
+    background-color: hsl(0, 0%, 99%);
+}
+
+.TodoSearch {
+  display: block;
+  width: 300px;
+  height: 40px;
+  margin: 0 auto;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.TodoSearch:focus {
+  outline: none;
+  border: 2px solid blue;
+}
 h1{
     font-size: 22px;
     text-align: center;

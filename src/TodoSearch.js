@@ -1,6 +1,7 @@
 function TodoSearch() {
     return (
-        <input placeholder="cortar cabello"/>
+        <input  className="TodoSearch"
+         placeholder="cortar cabello"/>
     );
 }
 export { TodoSearch };
