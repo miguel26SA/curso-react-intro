@@ -2,7 +2,6 @@ import { TodoCounter } from './TodoCounter';
 import { TodoSearch } from './TodoSearch';
 import {TodoList} from './TodoList';
 import logo from './platzi.webp';
-import './App.css';
 import { TodoItem } from './TodoItem';
 import { CreateTodoButton } from './CreateTodoButton';
 import React from 'react';
