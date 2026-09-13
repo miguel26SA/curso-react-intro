@@ -1,5 +1,5 @@
 function TodoList(props) {
-  return (<ul>
+  return (<ul className="TodoList">
 {props.children}
   </ul>);
   

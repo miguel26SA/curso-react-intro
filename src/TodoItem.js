@@ -1,9 +1,9 @@
 function TodoItem(props) {
   return (
-    <li>
-      <span>V</span>
+    <li className={`TodoItem ${props.completed ? 'TodoItem--completed' : ''}`}>
+      <span className="TodoItem-check">✓</span>
       <p>{props.text}</p>
-      <span>X</span>
+      <span className="TodoItem-delete">×</span>
     </li>
     
   );

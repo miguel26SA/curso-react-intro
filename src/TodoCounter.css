@@ -1,27 +1,129 @@
-body{
-    background-color: hsl(0, 0%, 99%);
+body {
+  margin: 0;
+  min-width: 320px;
+  background: #f1f3f4;
+  color: #3f4145;
+  font-family: 'Trebuchet MS', 'Segoe UI', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.todo-app {
+  position: relative;
+  width: min(100%, 420px);
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 92px 20px 110px;
+  background: linear-gradient(145deg, #f5f6f7 0%, #e5e8e9 100%);
+  box-shadow: 0 0 28px rgba(75, 81, 84, 0.16);
+}
+
+.TodoCounter {
+  margin: 0 auto 40px;
+  color: #45484c;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.08;
+  text-align: center;
+}
+
+.TodoCounter strong {
+  font-weight: 700;
 }
 
 .TodoSearch {
   display: block;
-  width: 300px;
-  height: 40px;
-  margin: 0 auto;
-  padding: 10px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  box-sizing: border-box;
+  width: min(100%, 238px);
+  height: 55px;
+  margin: 0 auto 54px;
+  padding: 0 16px;
+  border: 2px solid #3e4144;
+  border-radius: 0;
+  background: rgba(255, 255, 255, 0.25);
+  color: #55585b;
+  font: inherit;
+  font-size: 20px;
   text-align: center;
+  box-shadow: 0 7px 18px rgba(70, 75, 78, 0.12);
+}
+
+.TodoSearch::placeholder {
+  color: #aeb2b4;
 }
 
 .TodoSearch:focus {
-  outline: none;
-  border: 2px solid blue;
+  outline: 3px solid rgba(92, 154, 174, 0.3);
+  outline-offset: 2px;
 }
-h1{
-    font-size: 22px;
-    text-align: center;
-    margin: 0;
-    padding: '10px';
+
+.TodoList {
+  display: grid;
+  gap: 21px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.TodoItem {
+  display: grid;
+  grid-template-columns: 32px 1fr 28px;
+  align-items: center;
+  min-height: 86px;
+  padding: 14px 14px 14px 18px;
+  background: rgba(255, 255, 255, 0.78);
+  box-shadow: 0 5px 13px rgba(100, 104, 106, 0.1);
+}
+
+.TodoItem p {
+  margin: 0;
+  color: #53565a;
+  font-size: 17px;
+  line-height: 1.18;
+}
+
+.TodoItem-check,
+.TodoItem-delete {
+  color: #85898b;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.TodoItem-delete {
+  align-self: start;
+  font-size: 38px;
+  font-weight: 400;
+  text-align: right;
+}
+
+.CreateTodoButton {
+  position: absolute;
+  right: 22px;
+  bottom: 25px;
+  width: 58px;
+  height: 58px;
+  border: 0;
+  border-radius: 50%;
+  background: #55c9e7;
+  color: white;
+  cursor: pointer;
+  font-size: 38px;
+  font-weight: 300;
+  line-height: 1;
+  box-shadow: 0 4px 10px rgba(40, 133, 157, 0.25);
+}
+
+.CreateTodoButton:hover {
+  background: #42bddc;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
 }
